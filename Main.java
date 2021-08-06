@@ -22,6 +22,12 @@ public class Main {
 
         System.out.println("Average result = " + MathEquations.getAverageResult());
 
+        MathEquations equationOverload = new MathEquations('d');
+        double leftDouble = 9.0d;
+        double rightDouble = 4.0d;
+
+        equationOverload.execute(leftDouble,rightDouble);
+        System.out.println("Overload result with Doubles: " + equationOverload.getResult());
 
 
     }
